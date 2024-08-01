@@ -3,7 +3,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: make setup
-      - uses: make start
+      - run: make setup
+      - run: make start
       - run: test
       - run: make lint
