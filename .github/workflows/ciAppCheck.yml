@@ -1,0 +1,10 @@
+name: ciapp
+on: push
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: make setup
+      - uses: make start
+      - run: test
+      - run: make lint
