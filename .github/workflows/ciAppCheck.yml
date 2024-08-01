@@ -8,6 +8,6 @@ jobs:
       - uses: actions/setup-node@v3
       - run: make setup
       - run: make start
-        env: JWT_SECRET
+        env: JWT_SECRET.
       - run: test
       - run: make lint
